@@ -84,3 +84,52 @@ main {
     margin: 0 auto;
     padding: 1rem;
 }
+
+form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Input, textarea e select */
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Focus */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    /* verde */
+    color: white;
+    padding: 10px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+button[type="submit"]:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
