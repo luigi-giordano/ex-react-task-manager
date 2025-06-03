@@ -18,7 +18,18 @@ table {
     font-family: Arial, sans-serif;
 }
 
-th,
+td.todo {
+    background-color: red;
+}
+
+td.doing {
+    background-color: yellow;
+}
+
+td.done {
+    background-color: green;
+}
+
 td {
     border: 1px solid #ccc;
     padding: 10px;
