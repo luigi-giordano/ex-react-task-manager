@@ -3,8 +3,6 @@ import { createContext, useState, useEffect } from "react";
 export const GlobalContext = createContext();
 const { VITE_API_URL } = import.meta.env;
 
-console.log('API URL:', VITE_API_URL);
-
 export function GlobalProvider({ children }) {
 
     const [tasks, setTasks] = useState([]);
