@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import Modal from './Modal';
 import { Form } from 'react-router-dom';
 
-export default function EditTaskModal({ show, onCLose, task, onSave }) {
+export default function EditTaskModal({ show, onClose, task, onSave }) {
     const [editTask, setEditTask] = useState(task);
     const editFormRef = useRef();
 
@@ -52,7 +52,7 @@ export default function EditTaskModal({ show, onCLose, task, onSave }) {
             }
             confirmText='Salva'
             show={show}
-            onClose={onCLose}
+            onClose={onClose}
             onConfirm={() => editFormRef.current.requestSubmit()}
         />
     )
