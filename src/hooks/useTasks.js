@@ -36,7 +36,7 @@ export default function useTasks() {
     }
 
     const updateTask = async updatedTask => {
-        const response = await fetch(`${VITE_API_URL}/tasks/${updateTask.id}`, {
+        const response = await fetch(`${VITE_API_URL}/tasks/${updatedTask.id}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updatedTask)
