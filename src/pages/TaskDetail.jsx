@@ -30,9 +30,9 @@ export default function TaskDetail() {
         }
     }
 
-    const handleUpdate = async updatedTask => {
+    const handleUpdate = async newUpdatedTask => {
         try {
-            await updateTask(updatedTask);
+            await updateTask(newUpdatedTask);
             alert("Task modificata con successo!");
             setShowEditModal(false);
         } catch (error) {

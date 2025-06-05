@@ -37,9 +37,26 @@ td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #38b1e9;
+    /* colore di sfondo */
+    color: #333;
+    /* colore del testo */
     font-weight: bold;
+    /* grassetto */
+    padding: 10px 15px;
+    /* spazio interno */
+    text-align: center;
+    /* allineamento del testo */
+    border-bottom: 2px solid #ccc;
+    /* linea inferiore */
+    text-transform: uppercase;
+    /* tutto maiuscolo */
+    font-size: 14px;
+    /* dimensione del font */
+    cursor: pointer;
+    /* rende cliccabile */
 }
+
 
 tr:nth-child(even) {
     background-color: #f9f9f9;

@@ -3,6 +3,7 @@ import Modal from './Modal';
 import { Form } from 'react-router-dom';
 
 export default function EditTaskModal({ show, onClose, task, onSave }) {
+
     const [editTask, setEditTask] = useState(task);
     const editFormRef = useRef();
 
