@@ -31,7 +31,6 @@ export default function useTasks() {
         });
         const { success, message } = await response.json();
         if (!success) throw new Error(message);
-
         setTasks(prevTasks => prevTasks.filter(task => task.id !== taskId));
     }
 
@@ -47,5 +46,10 @@ export default function useTasks() {
         setTasks(prevTasks => prevTasks.map(oldTask => oldTask.id === newTask.id ? newTask : oldTask));
     }
 
-    return { tasks, addTask, removeTask, updateTask };
+    return {
+        tasks,
+        addTask,
+        removeTask,
+        updateTask
+    };
 }

@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 import Modal from './Modal';
-import { Form } from 'react-router-dom';
 
 export default function EditTaskModal({ show, onClose, task, onSave }) {
 
@@ -22,7 +21,9 @@ export default function EditTaskModal({ show, onClose, task, onSave }) {
         <Modal
             title="Modifica Task"
             content={
-                <form ref={editFormRef} onSubmit={handleSubmit}>
+                <form
+                    ref={editFormRef}
+                    onSubmit={handleSubmit}>
                     <label>
                         Nome Task:
                         <input
@@ -45,7 +46,12 @@ export default function EditTaskModal({ show, onClose, task, onSave }) {
                             onChange={e => changeEditedTask('status', e)}
                         >
                             {['To do', 'Doing', 'Done'].map((value, index) => (
-                                <option value={value} key={index}>{value}</option>
+                                <option
+                                    value={value}
+                                    key={index}
+                                >
+                                    {value}
+                                </option>
                             ))}
                         </select>
                     </label>
