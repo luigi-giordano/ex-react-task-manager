@@ -1,4 +1,4 @@
-// Importa useState e useRef da React per gestire stato e riferimenti DOM
+// Importo useState e useRef da React per gestire stato e riferimenti DOM
 import { useState, useRef } from 'react';
 // Importa il componente Modal
 import Modal from './Modal';
